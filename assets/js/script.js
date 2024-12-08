@@ -101,6 +101,23 @@ const name = urlParams.get('n')
 const namaSambutan = document.querySelector('#namaSambutan')
 namaSambutan.innerText = `${pronoun} ${name},`
 
+// Perbarui title secara dinamis
+if (pronoun && name) {
+    document.title = `${pronoun} ${name} Wedding`;
+}
+
+// Perbarui meta description secara dinamis (jika diperlukan)
+const metaDescription = document.querySelector('meta[name="description"]');
+if (metaDescription) {
+    metaDescription.setAttribute('content', `${pronoun} and ${name}'s wedding invitation`);
+}
+
+// Perbarui gambar Open Graph secara dinamis (jika diperlukan)
+const metaImage = document.querySelector('meta[property="og:image"]');
+if (metaImage && pronoun && name) {
+    metaImage.setAttribute('content', `https://www.example.com/images/${pronoun}-${name}.jpg`);
+}
+
 // copy text
 function copyText(el)
 {
