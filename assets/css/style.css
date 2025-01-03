@@ -486,6 +486,24 @@ body.transition {
 	color: var(--white);
 }
 
+.turut-undang {
+	background-image: url("../img/turut-undang.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 2rem;
+}
+
+.turut-undang .card-title {
+	text-align: center;
+	font-weight: bold;
+}
+
+.turut-undang .card-text {
+	text-transform: capitalize;
+	text-shadow: 2px 2px 5px #ffffff;
+}
+
 #penutup-section {
 	position: relative;
 	height: 100vh;
@@ -550,6 +568,10 @@ body.transition {
 		top: -15px;
 		width: 60px;
 		height: 60px;
+	}
+
+	.turut-undang {
+		background-image: url(../img/turut-undang-hp.jpg);
 	}
 }
 
